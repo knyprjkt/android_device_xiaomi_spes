@@ -176,6 +176,11 @@ vendor.display.use_smooth_motion=1
 vendor.display.defer_fps_frame_count=2
 vendor.display.override_doze_mode=1
 
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
