@@ -76,3 +76,10 @@ case "$buildvariant" in
         echo "4 4 1 4" > /proc/sys/kernel/printk
         ;;
 esac
+
+# Set RAM property based on system RAM
+# Get amount of RAM in the system
+MemTotalStr=`cat /proc/meminfo | grep MemTotal`
+MemTotal=${MemTotalStr:16:8}
+let RamSizeGB="( $MemTotal / 1048576 ) + 1"
+setprop ro.vendor.hw.ram "$RamSizeGB"GB
