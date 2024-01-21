@@ -111,6 +111,11 @@ drm.service.enabled=true
 # FS-verity
 ro.apk_verity.mode=2
 
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|930|150|local:4630946773257169537
+persist.vendor.fingerprint.sensor_modules=fpc,goodix
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
