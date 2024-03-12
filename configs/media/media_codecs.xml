@@ -159,6 +159,7 @@ _____________________________________________________
             <Limit name="bitrate" range="1-120000000" />
             <Limit name="frame-rate" range="1-60" />
             <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
         </MediaCodec>
         <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" update="true">
             <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
@@ -168,6 +169,7 @@ _____________________________________________________
             <Limit name="block-count" range="1-14400" />
             <Limit name="blocks-per-second" range="1-432000" />
             <Limit name="bitrate" range="1-30000000" />
+            <Feature name="can-swap-width-height" required="true" />
        </MediaCodec>
        <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
             <!-- profiles and levels:  ProfileHigh : Level51 -->
@@ -178,6 +180,7 @@ _____________________________________________________
             <Limit name="blocks-per-second" range="1-489600" />
             <Limit name="bitrate" range="1-30000000" />
             <Feature name="adaptive-playback" />
+            <Feature name="can-swap-width-height" required="true" />
        </MediaCodec>
     </Decoders>
     <Encoders>
@@ -224,6 +227,7 @@ _____________________________________________________
             <Limit name="concurrent-instances" max="16" />
             <Limit name="quality" range="0-100" default="80" />
             <Feature name="bitrate-modes" value="CQ" />
+            <Feature name="can-swap-width-height" required="true" />
             <Limit name="performance-point-512x512" value="2025" />
         </MediaCodec>
         <MediaCodec name="OMX.qcom.video.encoder.heic" type="image/vnd.android.heic" >
@@ -236,6 +240,7 @@ _____________________________________________________
             <Limit name="concurrent-instances" max="6" />
             <Limit name="quality" range="0-100" default="80" />
             <Feature name="bitrate-modes" value="CQ" />
+            <Feature name="can-swap-width-height" required="true" />
             <Limit name="performance-point-8192x4320" value="3" />
             <Limit name="performance-point-1920x1080" value="6" />
         </MediaCodec>
@@ -252,7 +257,7 @@ _____________________________________________________
             <Limit name="complexity" range="0-10"  default="0" />
             <Limit name="quality" range="0-100"  default="80" />
             <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
-            <Feature name="can-swap-width-height" value="1" />
+            <Feature name="can-swap-width-height" required="true" />
         </MediaCodec>
     </Encoders>
 </MediaCodecs>
