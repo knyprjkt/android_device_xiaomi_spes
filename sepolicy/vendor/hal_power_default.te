@@ -2,6 +2,7 @@
 allow hal_power_default sysfs_touchpanel:dir search;
 
 r_dir_file(hal_power_default, input_device)
+rw_dir_file(hal_power_default, sysfs_thermal)
 
 allow hal_power_default {
   vendor_sysfs_devfreq

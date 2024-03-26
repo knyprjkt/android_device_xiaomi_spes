@@ -293,6 +293,15 @@
       "HoldFd": true
     },
     {
+      "Name": "ThermalProfile",
+      "Path": "/sys/devices/virtual/thermal/thermal_message/sconfig",
+      "Values": [
+        "20",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -380,6 +389,12 @@
       "Node": "CPUBWMinFreq",
       "Duration": 0,
       "Value": "7759"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "ThermalProfile",
+      "Duration": 0,
+      "Value": "20"
     },
     {
       "PowerHint": "LAUNCH",
