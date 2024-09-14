@@ -17,8 +17,8 @@ static const variant_info_t spes_info = {
     .device = "spes",
     .marketname = "Redmi Note 11",
     .model = "2201117TG",
-    .name = "spes_global",
-    .build_fingerprint = "Redmi/spes_global/spes:13/TKQ1.221114.001/V14.0.5.0.TGCMIXM:user/release-keys",
+    .name = "spes",
+    .build_fingerprint = "Redmi/spes/spes:13/TKQ1.221114.001/V816.0.7.0.TGCMIXM:user/release-keys",
 
     .nfc = false,
 };
@@ -31,8 +31,8 @@ static const variant_info_t spes_in_info = {
     .device = "spes",
     .marketname = "Redmi Note 11",
     .model = "2201117TI",
-    .name = "spes_global",
-    .build_fingerprint = "Redmi/spes_global/spes:13/TKQ1.221114.001/V14.0.5.0.TGCMIXM:user/release-keys",
+    .name = "spes",
+    .build_fingerprint = "Redmi/spes/spes:13/TKQ1.221114.001/V816.0.7.0.TGCMIXM:user/release-keys",
 
     .nfc = false,
 };
@@ -45,8 +45,8 @@ static const variant_info_t spesn_info = {
     .device = "spesn",
     .marketname = "Redmi Note 11",
     .model = "2201117TY",
-    .name = "spesn_global",
-    .build_fingerprint = "Redmi/spesn_global/spesn:13/TKQ1.221114.001/V14.0.5.0.TGCMIXM:user/release-keys",
+    .name = "spesn",
+    .build_fingerprint = "Redmi/spesn/spesn:13/TKQ1.221114.001/V816.0.7.0.TGCMIXM:user/release-keys",
 
     .nfc = true,
 };
