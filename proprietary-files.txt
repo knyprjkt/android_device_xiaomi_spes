@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from TKQ1.221114.001/V816.0.7.0.TGCMIXM except some RIL and thermal blobs
+# All unpinned blobs below are extracted from TKQ1.221114.001-V816.0.8.0.TGCMIXM-release-keys
 
 # ACDB
 vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Bluetooth_cal.acdb
@@ -805,11 +805,6 @@ vendor/lib64/hw/vulkan.adreno.so
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# IMS - missi_phoneext4_global-user-13-TKQ1.221114.001-V14.0.6.0.TGKMIXM-release-keys
--system_ext/app/ImsRcsService/ImsRcsService.apk
--system_ext/app/uceShimService/uceShimService.apk
-system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
-
 # IMS
 -system_ext/priv-app/ims/ims.apk
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
@@ -1270,9 +1265,6 @@ vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
-
-# Thermal engine - from alioth_global-user 12 RKQ1.200826.002 V13.0.2.0.SKHMIXM release-keys
-vendor/etc/init/init.mi_thermald.rc|6505d89e19957888612d89f6769585a7d26af080
 
 # Thermal engine
 -vendor/lib/libthermalclient.so
