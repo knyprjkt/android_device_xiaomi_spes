@@ -137,6 +137,10 @@ on boot
     chown system system /sys/class/leds/vibrator/duration
     chown system system /sys/class/leds/vibrator/activate
 
+    #Start mi_thermald
+    start mi_thermald
+
+
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
@@ -173,6 +177,12 @@ service vendor.per_mgr /vendor/bin/pm-service
     group system
     ioprio rt 4
     task_profiles ServiceCapacityLow
+
+service mi_thermald /vendor/bin/mi_thermald
+    class main
+    user root
+    group system
+    seclabel u:r:mi_thermald:s0
 
 service vendor.per_proxy /vendor/bin/pm-proxy
     class core
