@@ -1,0 +1,6 @@
+on boot && property:persist.vendor.usb.controller.default=*
+    setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
+
+on charger
+    setprop persist.sys.usb.config mass_storage
+    setprop vendor.usb.controller 4e00000.dwc3
