@@ -496,6 +496,10 @@ PRODUCT_BOOT_JARS += \
     telephony-ext \
     xiaomi-telephony-stub
 
+# Thermal configs
+PRODUCT_COPY_FILES += \
+  $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/thermal/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
