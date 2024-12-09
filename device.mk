@@ -492,10 +492,6 @@ PRODUCT_BOOT_JARS += \
     telephony-ext \
     xiaomi-telephony-stub
 
-# Thermal
-PRODUCT_PACKAGES += \
-  android.hardware.thermal-service.qti
-
 # Thermal configs
 PRODUCT_COPY_FILES += \
   $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/thermal/,$(TARGET_COPY_OUT_VENDOR)/etc)
