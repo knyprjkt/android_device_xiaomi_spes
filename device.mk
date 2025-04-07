@@ -439,6 +439,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     usb_compositions.conf
 
+# UFFD GC
+OVERRIDE_ENABLE_UFFD_GC := false
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
