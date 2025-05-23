@@ -164,19 +164,19 @@ _____________________________________________________
             <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
             <Limit name="size" min="2x2" max="1280x720" />
             <Limit name="alignment" value="2x2" />
-            <Limit name="block-size" value="8x8" />
-            <Limit name="block-count" range="1-3600" />
-            <Limit name="blocks-per-second" range="1-108000" />
-            <Limit name="bitrate" range="1-2000000" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="block-count" range="1-14400" />
+            <Limit name="blocks-per-second" range="1-432000" />
+            <Limit name="bitrate" range="1-30000000" />
        </MediaCodec>
        <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
             <!-- profiles and levels:  ProfileHigh : Level51 -->
-            <Limit name="size" min="2x2" max="1280x720" />
+            <Limit name="size" min="2x2" max="1920x1080" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
-            <Limit name="block-count" range="1-3600" />
-            <Limit name="blocks-per-second" range="1-108000" />
-            <Limit name="bitrate" range="1-20000000" />
+            <Limit name="block-count" range="1-8160" />
+            <Limit name="blocks-per-second" range="1-489600" />
+            <Limit name="bitrate" range="1-30000000" />
             <Feature name="adaptive-playback" />
        </MediaCodec>
     </Decoders>
