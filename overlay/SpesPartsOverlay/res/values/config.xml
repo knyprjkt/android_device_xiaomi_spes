@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <!-- Auto hbm -->
+    <string name="config_autoHbmNode">/sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm</string>
+
+    <!-- Auto DcDim -->
+    <string name="config_autoDcDimmingNode">/sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable</string>
+
+    <string-array name="thermal_profile_values" translatable="false">
+        <item>0</item>   <!-- @string/thermal_profile_default -->
+        <item>10</item> <!-- @string/thermal_profile_benchmark -->
+        <item>11</item> <!-- @string/thermal_profile_browser -->
+        <item>12</item> <!-- @string/thermal_profile_camera -->
+        <item>8</item> <!-- @string/thermal_profile_dialer -->
+        <item>9</item> <!-- @string/thermal_profile_gaming -->
+        <item>14</item> <!-- @string/thermal_profile_streaming -->
+    </string-array>
+
+</resources>
