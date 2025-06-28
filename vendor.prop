@@ -93,6 +93,7 @@ dalvik.vm.dex2oat-cpu-set=4,5,6,7
 dalvik.vm.dex2oat-threads=4
 dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
 dalvik.vm.image-dex2oat-threads=4
+dalvik.vm.systemuicompilerfilter=speed-profile
 
 # Display calib
 ro.vendor.display.sensortype=2
