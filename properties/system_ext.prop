@@ -4,3 +4,5 @@ persist.vendor.dpm.feature=11
 # Telephony
 ro.telephony.sim_slots.count=2
 telephony.active_modems.max_count=2
+
+import /system_ext/system_ext.${ro.boot.product.hardware.sku}.prop

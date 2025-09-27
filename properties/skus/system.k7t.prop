@@ -1,0 +1,10 @@
+ro.build.product=spes
+ro.system.build.fingerprint=Redmi/spes_global/spes:13/TKQ1.221114.001/V816.0.11.0.TGKMIXM:user/release-keys
+ro.product.system.brand=Redmi
+ro.product.system.device=spes
+ro.product.system.model=2201117TG
+ro.product.system.name=spes_global
+ro.product.system.marketname=Redmi Note 11
+ro.product.system.cert=2201117TG
+ro.product.board=spes
+ro.bootimage.build.fingerprint=Redmi/spes_global/spes:13/TKQ1.221114.001/V816.0.11.0.TGKMIXM:user/release-keys

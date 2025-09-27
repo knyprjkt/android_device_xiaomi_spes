@@ -1,2 +1,4 @@
 # Fwk detect
 ro.vendor.qti.va_odm.support=1
+
+import /vendor/odm/odm.${ro.boot.product.hardware.sku}.prop

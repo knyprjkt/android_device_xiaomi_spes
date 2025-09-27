@@ -421,6 +421,14 @@ PRODUCT_PACKAGES += \
 # Userfaultfd GC
 PRODUCT_ENABLE_UFFD_GC := true
 
+# Variant-specific property files
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,system.k*.prop,$(LOCAL_PATH)/properties/skus/,$(TARGET_COPY_OUT_SYSTEM)) \
+    $(call find-copy-subdir-files,system_ext.k*.prop,$(LOCAL_PATH)/properties/skus/,$(TARGET_COPY_OUT_SYSTEM_EXT)) \
+    $(call find-copy-subdir-files,vendor.k*.prop,$(LOCAL_PATH)/properties/skus/,$(TARGET_COPY_OUT_VENDOR)) \
+    $(call find-copy-subdir-files,product.k*.prop,$(LOCAL_PATH)/properties/skus/,$(TARGET_COPY_OUT_PRODUCT)) \
+    $(call find-copy-subdir-files,odm.k*.prop,$(LOCAL_PATH)/properties/skus/,$(TARGET_COPY_OUT_ODM))
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager

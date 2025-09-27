@@ -128,3 +128,5 @@ config.disable_rtt=true
 
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
+
+import /system/system.${ro.boot.product.hardware.sku}.prop
