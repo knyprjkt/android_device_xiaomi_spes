@@ -2,6 +2,7 @@ allow vendor_qti_init_shell configfs:dir rw_dir_perms;
 allow vendor_qti_init_shell configfs:file create_file_perms;
 allow vendor_qti_init_shell sysfs_wakeup:file setattr;
 allow vendor_qti_init_shell sysfs:file { setattr write };
+allow vendor_qti_init_shell proc_meminfo:file r_file_perms;
 
 r_dir_file(vendor_qti_init_shell, vendor_sysfs_process_reclaim)
 
@@ -11,3 +12,4 @@ allow vendor_qti_init_shell vendor_wifi_vendor_data_file:file r_file_perms;
 
 set_prop(vendor_qti_init_shell, ctl_stop_prop)
 set_prop(vendor_qti_init_shell, vendor_bluetooth_prop)
+set_prop(vendor_qti_init_shell, vendor_init_prop);
