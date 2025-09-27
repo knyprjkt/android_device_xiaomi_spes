@@ -231,9 +231,6 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
-# Init
-$(call soong_config_set,libinit,vendor_init_lib,libinit_spes)
-
 PRODUCT_PACKAGES += \
     init.mdm.sh \
     init.qcom.sh
@@ -271,13 +268,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
-
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
-$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
-$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/qcom-battery/input_suspend)
 
 # Media
 PRODUCT_PACKAGES += \

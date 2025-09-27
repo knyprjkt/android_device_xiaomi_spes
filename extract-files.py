@@ -29,7 +29,7 @@ namespace_imports = [
     'hardware/xiaomi',
     'vendor/qcom/opensource/commonsys/display',
     'vendor/qcom/opensource/commonsys-intf/display',
-    'vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um',
+    'vendor/qcom/opensource/data-ipa-cfg-mgr-nogki',
     'vendor/qcom/opensource/dataservices',
     'vendor/qcom/opensource/display'
 ]
